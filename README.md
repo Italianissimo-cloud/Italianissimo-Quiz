@@ -18,7 +18,7 @@ Mobile-Friendly Design: A fully responsive layout that looks great on any device
 How to View
 You can view this project directly on GitHub Pages. No installation is required.
 
-Live Demo: [YOUR-GITHUB-PAGES-URL-HERE]
+Live Demo: [https://italianissimo-cloud.github.io/Italianissimo-Quiz/]
 
 To use the interactive quiz, simply type your answers into the input fields and click "Check Answers" at the bottom of the page.
 
