@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Lesson: Sentire vs. Sentirsi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #1a1a1a;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .lesson-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .table-header {
+            background-color: #246db5;
+            color: #ffffff;
+        }
+        .table-row-alt {
+            background-color: #f0f6ff;
+        }
+        .input-container {
+            position: relative;
+        }
+        .feedback-icon {
+            position: absolute;
+            right: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+        }
+        .input-correct {
+            border-color: #10B981 !important;
+            box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+        }
+        .input-incorrect {
+            border-color: #EF4444 !important;
+            box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.3);
+        }
+        .input-correct + .feedback-icon.correct-icon,
+        .input-incorrect + .feedback-icon.incorrect-icon {
+            display: block;
+        }
+        .feedback-text {
+            display: none;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        .feedback-text.incorrect-feedback {
+            display: block;
+            color: #EF4444;
+        }
+        .feedback-text.correct-feedback {
+            display: block;
+            color: #10B981;
+        }
+        strong {
+            color: #246db5;
+        }
+        em {
+            font-style: italic;
+            color: #333;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#246db5',
+                        secondary: '#5cadff',
+                        background: '#ffffff',
+                        'text-color': '#1a1a1a',
+                        'primary-text': '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 sm:p-6 lg:p-8">
+        <div class="max-w-4xl mx-auto">
+
+            <header class="text-center mb-10">
+                <h1 class="text-4xl sm:text-5xl font-black text-primary tracking-tight">Understanding "Sentire" and "Sentirsi"</h1>
+                <p class="mt-2 text-lg text-gray-600">A guide to mastering feelings and senses in Italian.</p>
+            </header>
+
+            <main class="space-y-8">
+                
+                <section class="lesson-card rounded-xl shadow-lg p-6 sm:p-8">
+                    <p class="text-lg text-text-color leading-relaxed">The Italian verb <strong>sentire</strong> is incredibly versatile, translating to various English verbs related to sensing and feeling. Its meaning changes depending on the context and whether it's used in its basic (non-reflexive) form, or its reflexive forms like <strong>sentirsi</strong> and the idiomatic <strong>sentirsela</strong>. This lesson will clarify these distinctions for English speakers.</p>
+                </section>
+
+                <!-- Sentire Section -->
+                <section id="sentire" class="lesson-card rounded-xl shadow-lg p-6 sm:p-8">
+                    <h2 class="text-3xl font-bold text-primary mb-4 border-b-2 border-secondary pb-2">1. Sentire (Non-Reflexive Verb)</h2>
+                    <p class="mb-6 text-text-color"><strong>Sentire</strong> is primarily a <strong>transitive verb</strong>, meaning it usually takes a direct object. It is used to describe perceiving something <strong>external</strong> through your senses (hearing, touch, smell, taste), or to feel an emotion directed outwards.</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">1. To Hear / To Listen</h3>
+                            <ul class="list-disc list-inside space-y-2 pl-2 text-gray-700">
+                                <li><em>Sento un rumore.</em> (I hear a noise.)</li>
+                                <li><em>Mi senti bene?</em> (Can you hear me well?)</li>
+                                <li><em>Ho sentito che Domenico e Giada si sono lasciati!</em> (I heard that Domenico and Giada broke up!)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">2. To Feel (Physical Sensations)</h3>
+                            <ul class="list-disc list-inside space-y-2 pl-2 text-gray-700">
+                                <li><em>Sento freddo.</em> (I feel cold.)</li>
+                                <li><em>Senti com'è morbida questa lana!</em> (Feel how soft this wool is!)</li>
+                                <li><em>Sento fame / appetito.</em> (I feel hungry.)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">3. To Smell / To Taste</h3>
+                            <ul class="list-disc list-inside space-y-2 pl-2 text-gray-700">
+                                <li><em>Sento un profumo buonissimo.</em> (I smell a delicious scent.)</li>
+                                <li><em>Senti l'aglio nella salsa?</em> (Do you taste the garlic in the sauce?)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Conjugation Tables</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-primary">Present Indicative</h4>
+                            <div class="overflow-x-auto rounded-lg shadow">
+                                <table class="w-full text-sm text-left text-gray-500">
+                                    <thead class="text-xs uppercase table-header">
+                                        <tr><th scope="col" class="px-6 py-3">Pronoun</th><th scope="col" class="px-6 py-3">Verb</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>io</strong></td><td class="px-6 py-4">sento</td></tr>
+                                        <tr class="table-row-alt border-b"><td class="px-6 py-4"><strong>tu</strong></td><td class="px-6 py-4">senti</td></tr>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>lui/lei</strong></td><td class="px-6 py-4">sente</td></tr>
+                                        <tr class="table-row-alt border-b"><td class="px-6 py-4"><strong>noi</strong></td><td class="px-6 py-4">sentiamo</td></tr>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>voi</strong></td><td class="px-6 py-4">sentite</td></tr>
+                                        <tr class="table-row-alt"><td class="px-6 py-4"><strong>loro</strong></td><td class="px-6 py-4">sentono</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-primary">Passato Prossimo</h4>
+                            <div class="overflow-x-auto rounded-lg shadow">
+                                <table class="w-full text-sm text-left text-gray-500">
+                                    <thead class="text-xs uppercase table-header">
+                                        <tr><th scope="col" class="px-6 py-3">Pronoun</th><th scope="col" class="px-6 py-3">Verb</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>io</strong></td><td class="px-6 py-4">ho sentito</td></tr>
+                                        <tr class="table-row-alt border-b"><td class="px-6 py-4"><strong>tu</strong></td><td class="px-6 py-4">hai sentito</td></tr>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>lui/lei</strong></td><td class="px-6 py-4">ha sentito</td></tr>
+                                        <tr class="table-row-alt border-b"><td class="px-6 py-4"><strong>noi</strong></td><td class="px-6 py-4">abbiamo sentito</td></tr>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>voi</strong></td><td class="px-6 py-4">avete sentito</td></tr>
+                                        <tr class="table-row-alt"><td class="px-6 py-4"><strong>loro</strong></td><td class="px-6 py-4">hanno sentito</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sentirsi Section -->
+                <section id="sentirsi" class="lesson-card rounded-xl shadow-lg p-6 sm:p-8">
+                    <h2 class="text-3xl font-bold text-primary mb-4 border-b-2 border-secondary pb-2">2. Sentirsi (Reflexive Verb)</h2>
+                    <p class="mb-6 text-text-color"><strong>Sentirsi</strong> is the <strong>reflexive form</strong> of <em>sentire</em>. It means "to feel oneself" and describes one's own <strong>internal state or condition</strong>, encompassing physical well-being, mood, and emotions. It is typically followed by an adjective or a prepositional phrase.</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">1. To Feel (one's own state)</h3>
+                            <ul class="list-disc list-inside space-y-2 pl-2 text-gray-700">
+                                <li><em>Mi sento bene.</em> (I feel good/well.)</li>
+                                <li><em>Anna si sente triste.</em> (Anna feels sad.)</li>
+                                <li><em>Come ti senti dopo l'operazione?</em> (How do you feel after the surgery?)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">2. "Sentirsi di" + Infinitive</h3>
+                            <p class="text-gray-700">To feel like doing something / To feel able to do something.</p>
+                            <ul class="list-disc list-inside space-y-2 pl-2 text-gray-700 mt-2">
+                                <li><em>Non mi sento di guidare stasera.</em> (I don't feel like driving tonight.)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">3. "Sentirsela" (Pronominal Verb)</h3>
+                            <p class="text-gray-700">An idiomatic expression meaning "to feel up to it" or "to have the courage."</p>
+                            <ul class="list-disc list-inside space-y-2 pl-2 text-gray-700 mt-2">
+                                <li><em>Te la senti di parlare in pubblico?</em> (Do you feel up to speaking in public?)</li>
+                                <li><em>Non me la sento di andare a Siena oggi.</em> (I don't have it in me to go to Siena today.)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Conjugation Tables</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-primary">Present Indicative</h4>
+                            <div class="overflow-x-auto rounded-lg shadow">
+                                <table class="w-full text-sm text-left text-gray-500">
+                                    <thead class="text-xs uppercase table-header">
+                                        <tr><th scope="col" class="px-6 py-3">Pronoun</th><th scope="col" class="px-6 py-3">Verb</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>io</strong></td><td class="px-6 py-4">mi sento</td></tr>
+                                        <tr class="table-row-alt border-b"><td class="px-6 py-4"><strong>tu</strong></td><td class="px-6 py-4">ti senti</td></tr>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>lui/lei</strong></td><td class="px-6 py-4">si sente</td></tr>
+                                        <tr class="table-row-alt border-b"><td class="px-6 py-4"><strong>noi</strong></td><td class="px-6 py-4">ci sentiamo</td></tr>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>voi</strong></td><td class="px-6 py-4">vi sentite</td></tr>
+                                        <tr class="table-row-alt"><td class="px-6 py-4"><strong>loro</strong></td><td class="px-6 py-4">si sentono</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2 text-primary">Passato Prossimo</h4>
+                            <div class="overflow-x-auto rounded-lg shadow">
+                                <table class="w-full text-sm text-left text-gray-500">
+                                    <thead class="text-xs uppercase table-header">
+                                        <tr><th scope="col" class="px-6 py-3">Pronoun</th><th scope="col" class="px-6 py-3">Verb</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>io</strong></td><td class="px-6 py-4">mi sono sentito/a</td></tr>
+                                        <tr class="table-row-alt border-b"><td class="px-6 py-4"><strong>tu</strong></td><td class="px-6 py-4">ti sei sentito/a</td></tr>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>lui/lei</strong></td><td class="px-6 py-4">si è sentito/a</td></tr>
+                                        <tr class="table-row-alt border-b"><td class="px-6 py-4"><strong>noi</strong></td><td class="px-6 py-4">ci siamo sentiti/e</td></tr>
+                                        <tr class="bg-white border-b"><td class="px-6 py-4"><strong>voi</strong></td><td class="px-6 py-4">vi siete sentiti/e</td></tr>
+                                        <tr class="table-row-alt"><td class="px-6 py-4"><strong>loro</strong></td><td class="px-6 py-4">si sono sentiti/e</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Key Difference Section -->
+                <section id="difference" class="lesson-card rounded-xl shadow-lg p-6 sm:p-8 bg-primary text-primary-text">
+                    <h2 class="text-3xl font-bold mb-4 border-b-2 border-secondary pb-2">3. Key Difference</h2>
+                    <div class="grid md:grid-cols-2 gap-6 text-lg">
+                        <div>
+                            <h3 class="font-bold text-xl text-secondary mb-2">Sentire (External)</h3>
+                            <p>Perceiving something outside of you. You <strong>hear</strong> a noise, <strong>smell</strong> coffee, <strong>feel</strong> a cold breeze.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-secondary mb-2">Sentirsi (Internal)</h3>
+                            <p>Describing your own internal state. You <strong>feel</strong> happy, <strong>feel</strong> tired, <strong>feel</strong> sick.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Vocabulary Section -->
+                <section id="vocabulary" class="lesson-card rounded-xl shadow-lg p-6 sm:p-8">
+                    <h2 class="text-3xl font-bold text-primary mb-4 border-b-2 border-secondary pb-2">Vocabulary</h2>
+                    <div class="overflow-x-auto rounded-lg shadow">
+                        <table class="w-full text-sm text-left text-gray-500">
+                            <thead class="text-xs uppercase table-header">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">Italian Word</th>
+                                    <th scope="col" class="px-6 py-3">English Meaning</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b"><td class="px-6 py-4 font-semibold text-gray-900">sentire</td><td class="px-6 py-4">to hear, to feel (external), to smell, to taste</td></tr>
+                                <tr class="table-row-alt border-b"><td class="px-6 py-4 font-semibold text-gray-900">sentirsi</td><td class="px-6 py-4">to feel (internal, about oneself)</td></tr>
+                                <tr class="bg-white border-b"><td class="px-6 py-4 font-semibold text-gray-900">sentirsela</td><td class="px-6 py-4">to feel up to it, to have the courage</td></tr>
+                                <tr class="table-row-alt border-b"><td class="px-6 py-4 font-semibold text-gray-900">rumore</td><td class="px-6 py-4">noise</td></tr>
+                                <tr class="bg-white border-b"><td class="px-6 py-4 font-semibold text-gray-900">freddo / caldo</td><td class="px-6 py-4">cold / warm</td></tr>
+                                <tr class="table-row-alt border-b"><td class="px-6 py-4 font-semibold text-gray-900">stanco / triste</td><td class="px-6 py-4">tired / sad</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Practice Exercises Section -->
+                <section id="exercises" class="lesson-card rounded-xl shadow-lg p-6 sm:p-8">
+                    <h2 class="text-3xl font-bold text-primary mb-6 border-b-2 border-secondary pb-2">Practice Exercises</h2>
+                    
+                    <form id="quiz-form" class="space-y-8">
+                        <!-- Exercise 1 -->
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Exercise 1: Choose "sentire" or "sentirsi"</h3>
+                            <div class="space-y-4">
+                                <div class="quiz-question">
+                                    <label class="block text-gray-700">1. Io <input type="text" data-ex="1" data-q="0" class="mt-1 w-24 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> un buon profumo dalla cucina.</label>
+                                    <div class="feedback-container"></div>
+                                </div>
+                                <div class="quiz-question">
+                                    <label class="block text-gray-700">2. Loro <input type="text" data-ex="1" data-q="1" class="mt-1 w-28 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> molto felici dopo la notizia.</label>
+                                    <div class="feedback-container"></div>
+                                </div>
+                                <div class="quiz-question">
+                                    <label class="block text-gray-700">3. Tu <input type="text" data-ex="1" data-q="2" class="mt-1 w-20 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> bene quello che dico?</label>
+                                    <div class="feedback-container"></div>
+                                </div>
+                                <div class="quiz-question">
+                                    <label class="block text-gray-700">4. Noi <input type="text" data-ex="1" data-q="3" class="mt-1 w-28 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> stanchi dopo il lungo viaggio.</label>
+                                    <div class="feedback-container"></div>
+                                </div>
+                                <div class="quiz-question">
+                                    <label class="block text-gray-700">5. Lei <input type="text" data-ex="1" data-q="4" class="mt-1 w-20 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> il freddo fuori.</label>
+                                    <div class="feedback-container"></div>
+                                </div>
+                                <div class="quiz-question">
+                                    <label class="block text-gray-700">6. Voi <input type="text" data-ex="1" data-q="5" class="mt-1 w-24 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> di andare al concerto stasera?</label>
+                                    <div class="feedback-container"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Exercise 2 -->
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Exercise 2: Translate the Sentences</h3>
+                            <div class="space-y-4">
+                                <div class="quiz-question">
+                                    <label class="block text-gray-700">1. I feel good today.</label>
+                                    <div class="input-container"><input type="text" data-ex="2" data-q="0" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"><div class="feedback-icon correct-icon"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div><div class="feedback-icon incorrect-icon"><svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></div></div>
+                                    <div class="feedback-container"></div>
+                                </div>
+                                <div class="quiz-question">
+                                    <label class="block text-gray-700">2. Do you taste the sugar in the coffee?</label>
+                                    <div class="input-container"><input type="text" data-ex="2" data-q="1" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"><div class="feedback-icon correct-icon"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div><div class="feedback-icon incorrect-icon"><svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></div></div>
+                                    <div class="feedback-container"></div>
+                                </div>
+                                <div class="quiz-question">
+                                    <label class="block text-gray-700">3. We heard a strange noise last night.</label>
+                                    <div class="input-container"><input type="text" data-ex="2" data-q="2" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"><div class="feedback-icon correct-icon"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div><div class="feedback-icon incorrect-icon"><svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></div></div>
+                                    <div class="feedback-container"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Exercise 3 -->
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Exercise 3: Complete the Dialogue</h3>
+                            <div class="bg-blue-50 p-4 rounded-lg space-y-3 text-gray-800">
+                                <p><strong>Anna:</strong> Ciao Marco, come <input type="text" data-ex="3" data-q="0" class="w-24 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> oggi? Non ti <input type="text" data-ex="3" data-q="1" class="w-28 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> al telefono ieri.</p>
+                                <div class="feedback-container-dialogue grid grid-cols-2 gap-4"></div>
+                                <p><strong>Marco:</strong> Ciao Anna! Ieri <input type="text" data-ex="3" data-q="2" class="w-36 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> un po' male, per questo non <input type="text" data-ex="3" data-q="3" class="w-28 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> il telefono. Oggi <input type="text" data-ex="3" data-q="4" class="w-28 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> meglio, ma non <input type="text" data-ex="3" data-q="5" class="w-28 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> di uscire.</p>
+                                <div class="feedback-container-dialogue grid grid-cols-4 gap-4"></div>
+                                <p><strong>Anna:</strong> Capisco. Ma <input type="text" data-ex="3" data-q="6" class="w-20 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> questo odore? Io <input type="text" data-ex="3" data-q="7" class="w-20 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> l'odore di pizza!</p>
+                                <div class="feedback-container-dialogue grid grid-cols-2 gap-4"></div>
+                                <p><strong>Marco:</strong> Sì, lo <input type="text" data-ex="3" data-q="8" class="w-20 inline-block rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"> anche io! Forse è il nuovo ristorante italiano.</p>
+                                <div class="feedback-container-dialogue"></div>
+                            </div>
+                        </div>
+
+                        <div class="text-center pt-4">
+                            <button type="button" id="check-answers-btn" class="bg-primary hover:bg-blue-700 text-primary-text font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-transform duration-200">
+                                Check Answers
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+            </main>
+            
+            <footer class="text-center mt-12 pb-4">
+                <p class="text-sm text-gray-500">Buono studio! (Happy studying!)</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkButton = document.getElementById('check-answers-btn');
+
+            const answers = {
+                ex1: [
+                    { q: 0, a: ['sento'] },
+                    { q: 1, a: ['si sentono'] },
+                    { q: 2, a: ['senti'] },
+                    { q: 3, a: ['ci sentiamo'] },
+                    { q: 4, a: ['sente'] },
+                    { q: 5, a: ['vi sentite'] }
+                ],
+                ex2: [
+                    { q: 0, a: ['mi sento bene oggi', 'oggi mi sento bene'] },
+                    { q: 1, a: ['senti lo zucchero nel caffè?'] },
+                    { q: 2, a: ['abbiamo sentito un rumore strano ieri notte', 'ieri notte abbiamo sentito un rumore strano'] }
+                ],
+                ex3: [
+                    { q: 0, a: ['ti senti'] },
+                    { q: 1, a: ['ho sentito'] },
+                    { q: 2, a: ['mi sono sentito'] },
+                    { q: 3, a: ['ho sentito'] },
+                    { q: 4, a: ['mi sento'] },
+                    { q: 5, a: ['me la sento'] },
+                    { q: 6, a: ['senti'] },
+                    { q: 7, a: ['sento'] },
+                    { q: 8, a: ['sento'] }
+                ]
+            };
+
+            checkButton.addEventListener('click', () => {
+                const inputs = document.querySelectorAll('#quiz-form input[type="text"]');
+                
+                inputs.forEach(input => {
+                    const ex = input.dataset.ex;
+                    const q = parseInt(input.dataset.q);
+                    const userAnswer = input.value.trim().toLowerCase().replace(/[.!?]/g, '');
+                    
+                    const questionData = answers[`ex${ex}`].find(item => item.q === q);
+                    if (!questionData) return;
+
+                    const correctAnswers = questionData.a;
+                    const isCorrect = correctAnswers.includes(userAnswer);
+
+                    // Reset classes
+                    input.classList.remove('input-correct', 'input-incorrect');
+                    
+                    // Find feedback container
+                    let feedbackContainer;
+                    if (ex === '3') {
+                        // Special handling for dialogue
+                        const dialogueParagraph = input.closest('p');
+                        feedbackContainer = dialogueParagraph.nextElementSibling;
+                        if (!feedbackContainer || !feedbackContainer.classList.contains('feedback-container-dialogue')) {
+                            feedbackContainer = document.createElement('div');
+                            dialogueParagraph.after(feedbackContainer);
+                        }
+                    } else {
+                        feedbackContainer = input.closest('.quiz-question').querySelector('.feedback-container');
+                    }
+                    
+                    feedbackContainer.innerHTML = ''; // Clear previous feedback
+
+                    if (isCorrect) {
+                        input.classList.add('input-correct');
+                        const feedbackEl = document.createElement('p');
+                        feedbackEl.className = 'feedback-text correct-feedback';
+                        feedbackEl.textContent = 'Correct!';
+                        if (ex !== '2') feedbackContainer.appendChild(feedbackEl);
+                    } else {
+                        input.classList.add('input-incorrect');
+                        const feedbackEl = document.createElement('p');
+                        feedbackEl.className = 'feedback-text incorrect-feedback';
+                        feedbackEl.innerHTML = `Not quite. Correct answer: <strong>${correctAnswers[0]}</strong>`;
+                        feedbackContainer.appendChild(feedbackEl);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
